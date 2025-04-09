@@ -1,7 +1,0 @@
-.stbox {border:1px solid green; border-radius:5px;}
-
-.material-icons:hover {cursor:pointer; transition: 1s; color: black;}
-input[type=checkbox]:checked + #heart {background-color: red;}
-input[type=checkbox]{display: none;}
-
-#heart {width:100px; height:100px; border:3px solid black; border-radius:999px;}
