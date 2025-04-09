@@ -1,0 +1,28 @@
+div,input {box-sizing:border-box;}
+p {margin:0;}
+body {height:100vh; display:flex; justify-content:center; align-items:center; margin:0px;}
+#outer {width:800px; height:800px; border:1px solid red; display:grid; grid-template-rows:2.25fr 0.5fr 5fr 2.25fr;}
+#outer >div {display:grid; border:1px solid blue; height:100%;}
+#outer >div >div {border:1px solid green;}
+#header {grid-template-columns:2.5fr 6fr 1.5fr;}
+#header >div:nth-of-type(2) {display:flex; justify-content:center; align-items:center;}
+#header >div:nth-of-type(2) >input {height:15%;}
+#header >div:nth-of-type(2) >input:nth-of-type(1) {width:60%;}
+#header >div:nth-of-type(2) >input:nth-of-type(2) {width:20%;}
+#sub >div {border:unset !important; margin:10px 20px; display:flex; align-items:center; gap:4%;}
+#sub >div >a {color:darkorange; text-decoration:unset; font-size:large; font-weight:bold;}
+#main {grid-template-columns:2fr 6fr 2fr;}
+#main >div:nth-of-type(3) >div:nth-of-type(1) {display:grid; grid-template-columns:3fr 1fr;}
+#main >div:nth-of-type(3) >div:nth-of-type(1) >div:nth-of-type(1) {height:max-content;}
+#main >div:nth-of-type(3) >div:nth-of-type(1) >div:nth-of-type(1) >input {height:50%; padding-block:5px;}
+#main >div:nth-of-type(3) >div:nth-of-type(1) >div:nth-of-type(2) >input {height:100%;}
+#main > div:nth-child(3) > div:nth-child(2) {display:flex; justify-content:space-around;}
+#footer >div {display:grid; grid-template-rows:20% 80%;}
+#footer >div >div {width: 100%;}
+#footer >div >div:nth-of-type(1) {display:flex; margin-block:5px;}
+#footer >div >div:nth-of-type(1) >a {padding-inline:20px; color:black; text-decoration:unset; font-size:large; font-weight:bold;}
+#footer >div >div:nth-of-type(1) >a:not(:last-child) {border-right:2px solid black;}
+#footer >div >div:nth-of-type(2) {display:flex; flex-wrap:wrap; padding:10px 20px; color:gray; border-top: 1px solid black;}
+#footer >div >div:nth-of-type(2) >p {width:100%;}
+#footer >div >div:nth-of-type(2) >p:first-child {margin-bottom:10px;}
+#footer >div >div:nth-of-type(2) >p:last-child {height:max-content; text-align:center;}

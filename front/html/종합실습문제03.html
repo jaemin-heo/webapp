@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>종합실습문제03</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form>
+        <fieldset>
+            <legend>필수 입력 사항</legend>
+            <table>
+                <tr>
+                <th>ID</th>
+                <td><input type="text" placeholder="아이디 10글자 이내" maxlength="10" size="30"></td>
+                <td><button onclick="alert('확인')">중복확인</button></td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input type="password" placeholder="영문,숫자,특수문자 포함 8자 이상" size="30" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>비밀번호 확인</th>
+                    <td><input type="password" size="30"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Eamil</th>
+                    <td><input type="email" size="30"></td>
+                    <td>
+                        <select name="">
+                            <option value="">직접입력</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="google.com">google.com</option>
+                            <option value="daum.com">daum.com</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>추가 정보</legend>
+            <span>프로필 사진 : </span><input type="file"><br><br>
+            <span>성별 : </span>
+            <input type="radio" name="radio01" value="남자" checked><span>남자</span>
+            <input type="radio" name="radio01" value="여자"><span>여자</span><br><br>
+            <span>생년월일 : </span><input type="date"><br><br>
+            <span>취미 : </span><br>
+            <input type="checkbox" name="checkbox01" value="게임"><span>게임</span>
+            <input type="checkbox" name="checkbox01" value="운동"><span>운동</span>
+            <input type="checkbox" name="checkbox01" value="취침"><span>취침</span><br>
+            <input type="checkbox" name="checkbox01" value="댄스"><span>댄스</span>
+            <input type="checkbox" name="checkbox01" value="노래"><span>노래</span>
+            <input type="checkbox" name="checkbox01" value="공부" checked><span>공부</span><br>
+            <input type="checkbox" name="checkbox01" value="기타"><span>기타 : </span><input type="text">
+            <br><br>
+            <span>자기소개<span><br>
+            <textarea name="" style="width: 400px; height: 100px;"></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="회원가입">
+        <input type="reset" value="다시입력">
+        <button>이전으로</button>
+    </form>
+</body>
+</html>

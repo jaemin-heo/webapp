@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>선택자우선순위</title>
+    <style>
+        h1 {background-color: black;}
+        h1 {background-color: white;}
+        .test {background-color: orange;}
+        h1 {background-color: aqua;}
+        h1.test {background-color: blueviolet !important;}
+        html >body >h1 {background-color: aliceblue;}
+        body h1 {background-color: blue;}
+        h1 {background-color: bisque;}
+    </style>
+</head>
+<body>
+    <h1 id="target" class="test">선택자우선순위</h1>
+    <h1>선택자우선순위</h1>
+    <!-- 
+        기본적으로 CSS 속성은 위에서 아래로 적용되지만,
+        같은 요소에 다양한 선택자로 CSS 속성이 설정된 경우에는 우선순위에 따라 스타일이 적용된다.
+
+        태그 선택자 < 클래스 선택자 < 아이디 선택자 < 인라인 스타일 < !important 순서로 우선순위를 가진다.
+     -->
+</body>
+</html>

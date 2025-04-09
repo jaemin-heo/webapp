@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./02_선택자2.css">
+    <title>선택자2</title>
+</head>
+<body>
+    <h1>선택자2</h1>
+    <!-- 
+        외부 스타일 시트
+        스타일만을 따로 관리하는 .css 확장자를 가지는 외부 문서를 만들고
+        <link> 태그를 통해 연결시켜주는 방법
+    -->
+
+    <!--  
+        속성 선택자
+        기본 선택자 뒤에 []를 사용하여 속성과 속성값을 사용한다.
+    -->
+    <div name="n1">악!</div>
+    <div name="n2">악!</div>
+    
+    <hr>
+
+    <!-- 
+        자식 / 후손 선택자
+     -->
+        <ul>
+            <li class="apple">사과</li>
+            <li>딸기</li>
+            <ul>
+                <li>사과</li>
+                <li>딸기</li>
+            </ul>
+        </ul>
+
+        <div class="apple">디브애플</div>
+
+        <hr>
+
+        <div id="test-children">
+            <span>디브 아래 스팬</span>
+            <strong>디브 아래 스트롱</strong>
+            <ul>
+                <li>디브 아래 유엘 아래 리스트</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>동위 선택자</h2>
+        <!-- 
+            동위 관계(같은 레벨)에서 뒤에 위치한 태그를 선택
+        -->
+        
+        <pre>
+            [문법]
+
+            a 뒤에 있는 b 요소 한 개 선택
+            a+b { 스타일 }
+
+            a 뒤에 있는 b 요소 전부 선택
+            a~b { 스타일 }
+        </pre>
+
+        <div id="same-level-test">div01</div>
+        <div>div02</div>
+        <div>div03</div>
+        <div>div04</div>
+        <div>div05</div>
+
+        <h2>반응 선택자</h2>
+        <!-- 
+            사용자의 움직임에 따라 선택
+        -->
+
+        <pre>
+            [문법]
+
+            선택자:active { 스타일 }
+            선택자:hover { 스타일 }
+        </pre>
+         
+        <div id="active-test">액티브 테스트 디브</div>
+        <div id="hover-test">호버 테스트 디브</div>
+         
+         
+        <h2>상태 선택자</h2>
+        <!-- 
+            상태에 따라 선택
+        -->
+ 
+        <pre>
+            [문법]
+ 
+            선택자:상태 { 스타일 }
+        </pre>
+          
+        <input type="text" id="focus-test">
+        <br>
+          
+        <input type="checkbox" id="checkbox-test">
+        <br>
+          
+        <input type="text" id="enabled-test">
+        <br>
+          
+        <input type="text" id="disabled-test" disabled>
+          
+        <h2>일반 구조 선택자</h2>
+        <!-- 
+            특정 위치에 있는 태그 선택
+        -->
+  
+        <div id="test-div">
+            <p>테스트1</p>
+            <p>테스트2</p>
+            <p>테스트3</p>
+            <p>테스트4</p>
+            <p>테스트5</p>
+            <pre>테스트6 (pre)</pre>
+        </div>
+
+        <h2>문자 선택자</h2>
+        <!-- 태그 내 특정 조건 문자 선택 -->
+         
+        <p id="string-test">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fuga ea officia animi necessitatibus iure incidunt exercitationem debitis impedit. Delectus ab alias sunt saepe incidunt unde iste molestiae possimus magnam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fuga ea officia animi necessitatibus iure incidunt exercitationem debitis impedit. Delectus ab alias sunt saepe incidunt unde iste molestiae possimus magnam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fuga ea officia animi necessitatibus iure incidunt exercitationem debitis impedit. Delectus ab alias sunt saepe incidunt unde iste molestiae possimus magnam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fuga ea officia animi necessitatibus iure incidunt exercitationem debitis impedit. Delectus ab alias sunt saepe incidunt unde iste molestiae possimus magnam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fuga ea officia animi necessitatibus iure incidunt exercitationem debitis impedit. Delectus ab alias sunt saepe incidunt unde iste molestiae possimus magnam!
+        </p>
+
+        <div id="angle-test">
+            <div></div>
+        </div>
+
+        <h2>부정 선택자</h2>
+        <!-- 
+            지금까지의 반대로 적용
+         -->
+            
+        </body>
+        </html>

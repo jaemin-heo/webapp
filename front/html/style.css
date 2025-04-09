@@ -1,0 +1,11 @@
+@font-face {font-family:GamjaFlower; src:url(/resources/font/GamjaFlower-Regular.ttf);}
+body {margin:0 10px; font-family:GamjaFlower; transition:background-color 0.4s;}
+
+@media (min-width: 1024px) { 
+    /* PC 스타일 */
+    body {background-color:gray; color:white;}
+}
+@media (max-width: 1024px) { 
+    /* 모바일 스타일 */
+    body {background-color:white; color:black;}
+}
