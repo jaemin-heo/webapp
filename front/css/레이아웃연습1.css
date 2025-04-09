@@ -1,0 +1,9 @@
+div {box-sizing:border-box;}
+body {height:100vh; display:flex; justify-content:center; align-items:center; margin:0px;}
+#outer {width:800px; height:800px; border:3px solid red; display:grid; grid-template-rows:2.5fr 5fr 2.5fr;}
+#outer >div {display:grid; border:10px solid blue; height:100%;}
+#outer >div >div {border:3px solid green;}
+#header {grid-template-columns:3fr 7fr;}
+#main {grid-template-columns:1.5fr 7fr 1.5fr;}
+#footer {grid-template-columns:1fr;}
+

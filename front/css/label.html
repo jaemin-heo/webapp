@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./label.css">
+    <script>
+        $(function(){
+            $(".material-icons").click(function(){
+                console.log($(this).css("color"));
+                if($(this).css("color") == "rgb(0, 0, 0)"){
+                    $(this).css({"color":"red"}).text("favorite");
+                }else{
+                    $(this).css({"color":"black"}).text("favorite_border");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>레이블</h1>
+    <div class="stbox">a</div>
+    <label for="x">남자</label>
+    <input type="checkbox" id="x" name="sex">
+    <label for="y">여자</label>
+    <input type="checkbox" id="y" name="sex">
+
+    <hr>
+
+    <span class="material-icons">favorite_border</span>
+    <label for="heart">
+    <input type="checkbox" id="heart">
+    <div id="heart">하트</div>
+    </label>
+</body>
+</html>
