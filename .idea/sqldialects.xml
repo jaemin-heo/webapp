@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://D:/dev/sql_repo/01_사용자계정생성.sql" dialect="Oracle" />
+    <file url="file://D:/dev/sql_repo/01_실습환경스크립트.sql" dialect="Oracle" />
+    <file url="file://D:/dev/sql_repo/03_DQL(SELECT).sql" dialect="Oracle" />
+    <file url="file://D:/dev/sql_repo/04_함수.sql" dialect="Oracle" />
+    <file url="file://D:/dev/sql_repo/연습장.sql" dialect="Oracle" />
+  </component>
+</project>
