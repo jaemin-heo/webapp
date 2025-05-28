@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS웹앱</title>
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="mainHeader">
+            <h1>&nbsp;&nbsp;메모장</h1>
+        </div>
+        <div id="mainContent">
+            <input type="text" name="inputText" placeholder="저장할 내용을 입력해주세요.">
+            <select id="category">
+                <option name="category" value="일상">일상</option>
+                <option name="category" value="공부">공부</option>
+                <option name="category" value="일정">일정</option>
+                <option name="category" value="아이디어">아이디어</option>
+                <option name="category" value="기록">기록</option>
+                <option name="category" value="감정">감정</option>
+            </select>
+            <button id="addText" onclick="addText()">추가</button>
+            <button id="insertText" onclick="insertText()">저장</button>
+            <button id="selectText" onclick="selectText()">조회</button>
+            <button id="deleteText" onclick="deleteText()">삭제</button>
+            <div id="textBox"></div>
+        </div>
+        <div id="mainFooter">
+            <h2>&nbsp;&nbsp;메모장</h2>
+        </div>
+    </div>
+    <div id="bg"></div>
+</body>
+</html>

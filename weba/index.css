@@ -1,0 +1,7 @@
+body, html {margin:0; padding:0;}
+body {display: flex; justify-content:center;}
+body >div#main {display:flex; flex-wrap:wrap; gap:20px; margin:20px; width:100%; height:100%; box-sizing:border-box;}
+body >div#main >div {width:100%; background-color:white; border:1px solid #f0f0f0; box-sizing:border-box;}
+#bg {background:linear-gradient(#54d8dc, #86dadb, #c6ddde, #fde1e1, #fecece, #fdb2b6); position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1;}
+body >div#main >div >input[name=inputText] {margin-block:15px; margin-left:15px;}
+#textBox {min-height:50vh; border:2px solid lightblue; margin:10px;}
