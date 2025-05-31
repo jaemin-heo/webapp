@@ -20,6 +20,7 @@ body >div {width:100%;}
 #joinPop.active {opacity:1; z-index:2;}
 #joinPop >div {display:flex; flex-wrap: wrap; align-items:center; place-content:center; background-color:#fdb2b6; width:50%; height:50%; border-radius:8px;}
 #joinPop >div >div {display:flex; justify-content:space-between; align-items:center; width:100%; margin-inline:20%; font-size:25px;}
+#joinPop >div >div:nth-child(3) >span {cursor:pointer;}
 
 #mainContent >div {margin-block:40px;}
 #mainContent >div:nth-of-type(2) {display:flex;}
