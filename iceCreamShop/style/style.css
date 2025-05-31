@@ -22,7 +22,9 @@ body >div {width:100%;}
 
 #mainContent >div {margin-block:40px;}
 #mainContent >div:nth-of-type(2) {display:flex;}
-.glide__slide >img {width:100%;}
+.glide__track {background:linear-gradient(to right, #54d8dc, #86dadb, #c6ddde, #fde1e1, #fecece, #fdb2b6); border-block:2px solid #f0f0f0;}
+.glide__slide {display:flex; justify-content:center;}
+.glide__slide >img {width:80%;}
 .glide__arrows {display:flex; justify-content:space-between; margin-inline:20%;}
 
 #showMenu {display:grid; gap:5px; margin:20px;}
