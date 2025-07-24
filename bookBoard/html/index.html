@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <script defer src="../js/index.js"></script>
+    <link rel="stylesheet" href="../css/common.css" />
+  </head>
+  <body>
+    <div class="mainDivStyle01">
+      <h2><i class="fa-brands fa-bluesky fa-shake fa-xl"></i>책 게시판</h2>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NAME</th>
+            <th scope="col">DESCRIPTION</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button onclick="modalToggle();">등록</button>
+    </div>
+    <div class="modal">
+      <div>
+        <div>
+          <label>id: <span id="modalId"></span></label>
+        </div>
+        <div>
+          <label>name: <input type="text" id="modalName" /></label>
+        </div>
+        <div>
+          <label
+            >description: <input type="text" id="modalDescription"
+          /></label>
+        </div>
+        <div id="btnList"></div>
+      </div>
+    </div>
+  </body>
+</html>
